@@ -1,0 +1,151 @@
+body{
+    font-size: 2.3em;
+    margin: 10%, 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: "Helvetica Neue", Arial, sans-serif; 
+}
+
+h1{
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.subtitle{
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    margin-top: -65px;
+    margin-left: 0.1em;
+    font-weight: normal;
+}
+
+.cta{
+    font: 400 system-ui;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; 
+    padding: 10px 40px;
+    margin: 15px 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+    font-size: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    border-radius: 30px;
+    border: 3px solid #000;
+    max-width: 30%;
+
+}
+
+.cta:hover,
+.cta:active {
+    color: #FFF;
+    background: #000
+}
+
+.explainer{
+    -webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	transition: all 0.6s;
+}
+
+a{
+    color: #000;
+}
+
+.form, form{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	transition: all 0.6s;
+} 
+
+input, textarea{
+    border: 2px solid black;
+    padding: 15px;
+    width: 60%;
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+textarea{
+    min-height: 100px;
+}
+
+button{
+    border: 2px solid black;
+    background: #000;
+    color: #FFF;
+    padding: 10px;
+    font-size: 0.5em;
+    width: 60%;
+    margin: 15px; 
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    cursor: pointer;
+}
+
+.mobile-illustration{
+    display: none;
+}
+
+.desktop-illustration{
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 768px){
+    
+    body{
+        font-size: 1.7em;
+    }
+
+    .subtitle{
+        margin-top: -50px;
+    }    
+
+    button{
+        width: 90%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    input, textarea{
+        width: 90%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .cta{
+        font-size: 25px;
+        max-width: 80%;
+    }
+
+    .mobile-illustration{
+        display: block;
+        margin-left:auto;
+        margin-right: auto;
+        max-width: 100%; 
+    }
+
+    .desktop-illustration{
+        display: none;
+    }
+}

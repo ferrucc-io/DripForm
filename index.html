@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>DripForm | No bullshit forms </title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/toggle.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+  <h1>Dripform</h1>
+  <h3 class="subtitle">No bullshit forms</h3>
+  <p>Dripform is the fastest and most convenient way to get feedback from your users.</p>
+  <img src="img/desktop-dripform.png" class="desktop-illustration" />
+  <img src="img/mobile-dripform-illustration.png" class="mobile-illustration" />
+  <a href="https://t.me/dripFormBot" class="cta">Get Started Now</a>
+  <div class="explainer">
+    <h2>What?</h2>
+    <p>Receive your forms as text messages on Telegram.</p>
+    <h2>How?</h2>
+    <li>Set up Telegram
+      <a href="https://t.me/dripFormBot">(Just one click)</a>
+    </li>
+    <li>Add a form like
+      <a href="https://github.com/ferrucc-io/dripform-example">these</a> to your website</li>
+    <li>Insert your User ID</li>
+    <p>And that's it!</p>
+  </div>
+  <h2>Do you keep any data?</h2>
+  <p style="padding-bottom: 57px;">We currently don't do any logging or storing. We might start storing data to provide more functionality like .csv exporting
+    of messages. But don't worry, we'll let you know in advance if we change our policy.</p>
+
+  <button id="dripform-container" onclick="toggleDripform()">
+    <img src="img/toggle-form.png" />
+    <p>Feedback?</p>
+  </button>
+  <div id="dripform-box">
+    <div class="top-bar">
+      <p>Feedback</p>
+      <p class="close" onclick="closeDripform()">-</p>
+    </div>
+    <div class="content">
+      <form action="./api/send-message" method="post">
+        <p class="label">Email</p>
+        <input type="email" name="email" placeholder="Enter your email..">
+        <p class="label">Message</p>
+        <textarea type="text" name="message" placeholder="Enter your feedback or message.."></textarea>
+        <input name="user" value="547308779" type="hidden"/>
+        <button>Submit</button>
+      </form>
+    </div>
+    <div class="footer">
+      <p>Powered by
+        <a href="https://dripform.now.sh">Dripform</a>
+      </p>
+    </div>
+  </div>
+</body>
+<script>
+  function toggleDripform() {
+    var x = document.getElementById("dripform-box");
+    x.style.display = "block";
+  }
+
+  function closeDripform() {
+    var x = document.getElementById("dripform-box");
+    x.style.display = "none";
+  }
+</script>
+
+</html>
