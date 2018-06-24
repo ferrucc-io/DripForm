@@ -181,6 +181,14 @@ button#dripform-container {
     #dripform-box input {
         width: 95%;
     }
+
+}
+
+@media screen and (min-width: 750px) {
+    #dripform-box {
+        max-height: 400px !important;
+        max-width: 350px !important;
+    }
 }
 
 @media screen and (min-width: 600px) {
