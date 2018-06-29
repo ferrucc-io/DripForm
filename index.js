@@ -28,9 +28,9 @@ app.use(express.static('public'));
 app.use(morgan('dev'));
 
 // bot TOKEN
-// const token = config.prodToken;
+const token = config.prodToken;
 // local
-const token = config.localToken;
+// const token = config.localToken;
 
 // Options for sendMessage
 const options = {
