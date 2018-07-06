@@ -10,7 +10,8 @@ function addCss(fileName) {
 }
 
 addCss('https://dripform.now.sh/css/toggle.css');
-const dripForm = '<button id="dripform-container" onclick="toggleDripform()">' +
+const userID = document.currentScript.getAttribute('tguser');
+const dripForm = `${'<button id="dripform-container" onclick="toggleDripform()">' +
                       '<img src="https://dripform.now.sh/img/toggle-form.png" />' +
                       '<p> Feedback?</p>' +
                     '</button>' +
@@ -25,7 +26,7 @@ const dripForm = '<button id="dripform-container" onclick="toggleDripform()">' +
                           '<input type="email" name="email" placeholder="Enter your email.." required>' +
                           '<p class="label">Message</p>' +
                           '<textarea type="text" name="message" placeholder="Enter your feedback or message.." required></textarea>' +
-                          '<input name="user" value="547308779" type="hidden" required/>' +
+                          '<input name="user" value="'}${userID}" type="hidden" required/>` +
                           '<button>Submit</button>' +
                         '</form>' +
                       '</div>' +

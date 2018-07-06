@@ -60,6 +60,29 @@ a{
     color: #000;
 }
 
+.code-example-container {
+    margin: -11rem auto 3rem auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    background-color: #232323;
+    min-height: auto;
+    animation: fadeUp 2s;
+    padding: 0 1rem;
+    padding-top: 8px;
+    padding-bottom: 25px;
+    box-shadow: 0px 12px 36.8px 9.2px rgba(0, 0, 0, 0.1);
+}
+
+span.code-example{
+    text-align: left;
+    color: white;
+    font-size: 0.4em;
+    font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
 .form, form{
     display: block;
     margin-left: auto;

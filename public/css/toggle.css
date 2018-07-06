@@ -59,6 +59,7 @@ button#dripform-container {
     display: inline-block;
     z-index: 1000;
     vertical-align: middle;
+    padding-left: 5px;
 }
 
 #dripform-box {
