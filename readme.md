@@ -8,10 +8,10 @@ The latest version is up and running at: [https://dripform.now.sh](https://dripf
 ## Work in Progress
 * Set Aliases // To be able to separate forms coming from different websites and to hide the User ID. requested by: Marco
 * Answer forms inside Telegram or forward as email // To never have to leave Telegram requested by: Marco
-* One line js bundle rendering // Basic Requirement to improve usability
-* Easier setup for the User Id in the bundle
 * Components/Plugins for major CMS (Wordpress/Shopify/Magento)
 
 ## Working
 * Forms
 * Message sending to Telegram
+* One line js bundle rendering
+* Easier setup for the User Id in the bundle
