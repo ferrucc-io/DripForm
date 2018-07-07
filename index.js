@@ -54,7 +54,7 @@ const bot = new Tgfancy(token, {
 
 bot.on('message', (msg) => {
   bot.sendMessage(msg.chat.id, `Hello, welcome to Dripform!\nYour user-id is ${msg.chat.id}\nCopy and paste this code to your website to start receiving forms as messages here:`);
-  bot.sendMessage(msg.chat.id, `<script src="https://dripform.now.sh/js/dripform.js" tguser="${msg.chat.id}" > </script>`);
+  bot.sendMessage(msg.chat.id, `<script src="https://dripform.ml/js/dripform.js" tguser="${msg.chat.id}" > </script>`);
 });
 
 // ------------------------------ //
