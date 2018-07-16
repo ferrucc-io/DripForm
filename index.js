@@ -16,6 +16,7 @@ const http = httpServer.Server(app);
 
 // CONFIGURATION
 const port = process.env.PORT || config.port;
+app.set('port', process.env.PORT || config.port);
 // mongoose.connect(config.database);
 app.set('superSecret', config.secret);
 
