@@ -9,10 +9,10 @@ function addCss(fileName) {
   head.appendChild(link);
 }
 
-addCss('https://dripform.ml/css/toggle.css');
+addCss('https://dripform.ga/css/toggle.css');
 const userID = document.currentScript.getAttribute('tguser');
 const dripForm = `${'<button id="dripform-container" onclick="toggleDripform()">' +
-                      '<img src="https://dripform.ml/img/toggle-form.png" />' +
+                      '<img src="https://dripform.ga/img/toggle-form.png" />' +
                       '<p> Feedback?</p>' +
                     '</button>' +
                     '<div id="dripform-box">' +
@@ -21,7 +21,7 @@ const dripForm = `${'<button id="dripform-container" onclick="toggleDripform()">
                         '<p class="close" onclick="closeDripform()">-</p>' +
                       '</div>' +
                         '<div class="content">' +
-                        '<form action="https://dripform.ml/api/send-message" method="post">' +
+                        '<form action="https://dripform.ga/api/send-message" method="post">' +
                           '<p class="label">Email</p>' +
                           '<input type="email" name="email" placeholder="Enter your email.." required>' +
                           '<p class="label">Message</p>' +
@@ -31,7 +31,7 @@ const dripForm = `${'<button id="dripform-container" onclick="toggleDripform()">
                         '</form>' +
                       '</div>' +
                       '<div class="footer">' +
-                        '<p>Powered by <a href="https://dripform.ml">Dripform</a>' +
+                        '<p>Powered by <a href="https://dripform.ga">Dripform</a>' +
                         '</p></div></div>';
 document.body.innerHTML += dripForm;
 function toggleDripform() {
